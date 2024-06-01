@@ -129,3 +129,70 @@ footer{
   justify-content: center;
   align-items: center;
 }
+
+
+
+
+
+.carousel-container {
+  position: relative;
+  /* margin-top: 20px; */
+  width: 80%;
+  margin: 40px auto 10px;
+  overflow: hidden;
+}
+
+.carousel {
+  display: flex;
+  /* overflow-x: scroll; */
+  transition: transform 0.5s ease-in-out;
+  padding: 10px;
+}
+.carousel::-webkit-scrollbar {
+  display: none;
+}
+
+
+
+.carousel-slide {
+  height: max-content;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 2em;
+  opacity: 0.8;
+}
+.carousel-slide img{
+  height: 400px;
+  width: 300px;
+}
+.carousel-slide.active {
+  font-size: 2em;
+  opacity: 1;
+}
+
+.carousel-dots {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.dot {
+  height: 15px;
+  width: 15px;
+  margin: 0 5px;
+  /* background-color: #bbb; */
+  border-radius: 50%;
+  display: inline-block;  
+  cursor: pointer;
+  /* transition: background-color 0.3s; */
+  background: url(assets/dot.png);
+  background-size: 15px;
+}
+
+.dot.active {
+  height: 25px;
+  width: 25px;
+  background: url(assets/acrcedot.png);
+  background-size: 25px;
+  /* background-color: #717171; */
+}
