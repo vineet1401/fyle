@@ -1,0 +1,142 @@
+
+input {
+  outline: none;
+  border: none;
+  font-weight: 700;
+}
+
+.contact-form{
+  
+  padding: 5px;
+}
+
+.contact-form-title {
+  display: block;
+  font-size: 1.1em;
+  color: #333;
+  margin-bottom: 20PX;
+  font-weight: 600;
+}
+
+.wrap-input {
+  position: relative;
+  border-bottom: 2px solid #adadad;
+  margin-bottom: 20px
+}
+
+.input {
+  display: block;
+  width: 100%;
+  font-size: 15px;
+  color: #555;
+  line-height: 1.2
+}
+
+.focus-input {
+  position: absolute;
+  display: block;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  pointer-events: none
+}
+
+.focus-input::before {
+  content: "";
+  display: block;
+  position: absolute;
+  bottom: -2px;
+  left: 0;
+  width: 0;
+  height: 2px;
+  -webkit-transition: all .4s;
+  -o-transition: all .4s;
+  -moz-transition: all .4s;
+  transition: all .4s;
+  background: #db1563;
+  background: -webkit-linear-gradient(45deg,#d5007d,#e53935);
+  background: -o-linear-gradient(45deg,#d5007d,#e53935);
+  background: -moz-linear-gradient(45deg,#d5007d,#e53935);
+  background: linear-gradient(45deg,#d5007d,#e53935)
+}
+
+.focus-input::after {
+  content: attr(data-placeholder);
+  display: block;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  font-size: 13px;
+  color: #5a5858;
+  line-height: 1.2;
+  -webkit-transition: all .4s;
+  -o-transition: all .4s;
+  -moz-transition: all .4s;
+  transition: all .4s
+}
+
+input.input {
+  height: 40px
+}
+
+input.input+.focus-input::after {
+  top: 16px;
+  left: 0
+}
+
+.input:focus+.focus-input::after {
+  top: -13px
+}
+
+.input:focus+.focus-input::before {
+  width: 100%
+}
+
+.has-val.input+.focus-input::after {
+  top: -13px
+}
+
+.has-val.input+.focus-input::before {
+  width: 100%
+}
+
+
+.contact-name{
+  display: flex;
+  gap: 20px;
+}
+
+.terms-container {
+  display: flex;
+  align-items: first baseline;
+  margin: 20px 0;
+}
+
+
+.terms-checkbox {
+  border: solid red;
+  border-width: 2px;
+  accent-color: red;
+}
+
+.terms-label {
+  margin-left: 5px;
+}
+
+.contact-button {
+  padding: 10px;
+  background: #ff3147 0% 0% no-repeat padding-box;
+  border-radius: 5px;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+}
+
+.contact-button:hover {
+  border: 2px solid #ff3147;
+  background-color: white;
+  color: black;
+
+}

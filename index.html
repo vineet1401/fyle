@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fyle</title>
+
+    <link rel="shortcut icon" href="./assets/Path 4406.svg" type="image/x-icon">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+        integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js"
+        integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy"
+        crossorigin="anonymous"></script>
+
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="contact.css">
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script defer src="script.js"></script>
+
+</head>
+
+<body>
+    <div class="wrapper">
+        <!-- Section: Award Winning -->
+        <section class="container p-5 my-2 award-winning ">
+            <div class="row align-items-center g-lg-5 py-4">
+                <div class="col-lg-7 col-md-10 col-sm-12 text-center text-lg-start mx-auto">
+                    <h1 class="mb-3 section-heading">Award Winning</h1>
+                    <h2 class="mb-3 section-subheading">Digital Marketing Agency</h2>
+                    <p class="fs-5">Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime ipsum veniam incidunt
+                        suscipit sunt nam sit facere architecto iure ducimus omnis, alias exercitationem vero voluptatem
+                        aliquid iste hic fugiat placeat.</p>
+                    <button class="btn mt-4 px-4 me-md-2 contact-us" data-bs-toggle="modal"
+                        data-bs-target="#loginModal">Contact Us</button>
+                </div>
+                <div class="col-lg-5 col-md-10 col-sm-12 mx-auto d-flex mt-4 align-items-center">
+                    <img class="m-auto img-fluid" style="max-height: 450px;" src="assets/hero.png" alt="Hero Image">
+                </div>
+            </div>
+        </section>
+
+        <!-- Modal: Contact Us -->
+        <div class="modal fade" id="loginModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content">
+                    <div class="modal-body">
+                        <form action="https://getform.io/f/lbjkwrka" method="POST" class="contact-form">
+                            <div class="contact-form-title">
+                                <span class="talk-to-us">Talk to us</span>
+                            </div>
+                            <div class="wrap-input">
+                                <input class="input" type="text" name="email" required>
+                                <span class="focus-input" data-placeholder="Work email*"></span>
+                            </div>
+                            <div class="contact-name">
+                                <div class="wrap-input">
+                                    <input class="input" type="text" name="Fname" required>
+                                    <span class="focus-input" data-placeholder="First Name*"></span>
+                                </div>
+                                <div class="wrap-input">
+                                    <input class="input" type="text" name="Lname" required>
+                                    <span class="focus-input" data-placeholder="Last Name*"></span>
+                                </div>
+                            </div>
+                            <div class="terms-container">
+                                <input type="checkbox" name="terms" value="Yes" class="terms-checkbox" required>
+                                <input type="hidden" name="terms" value="No" class="terms-checkbox">
+                                <label for="terms" class="terms-label">I agree to Fyle's terms and conditions, and provide
+                                    consent to send me communication.</label>
+                            </div>
+                            <button type="submit" class="contact-button">Contact Us</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Section: What We Do -->
+        <section class="container p-5 my-2 what-we-do">
+            <div class="align-items-center g-lg-5 py-2">
+                <div class="text-center row text-lg-start ">
+                    <div class="col-lg-5 text-center text-lg-start">
+                        <h1 class="mb-3 section-heading">What We Do</h1>
+                        <h2 class="mb-3 section-subheading">Services Provided for You</h2>
+                    </div>
+                    <div class="col-lg-7 d-flex align-items-center">
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime ipsum veniam incidunt suscipit
+                            sunt nam sit facere architecto iure ducimus omnis, alias exercitationem vero voluptatem aliquid
+                            iste hic fugiat placeat.</p>
+                    </div>
+                </div>
+                <div class="carousel-container">
+                    <div class="carousel">
+                        <div class="carousel-item">
+                            <img src="assets/one.png" class="img-fluid" alt="Image 1">
+                            <div class="overlay">
+                                <p>Image 1 Description</p>
+                                <button class="carousel-button">Learn More</button>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <img src="assets/two.png" class="img-fluid" alt="Image 2">
+                            <div class="overlay">
+                                <p>Image 2 Description</p>
+                                <button class="carousel-button">Learn More</button>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <img src="assets/three.png" class="img-fluid" alt="Image 3">
+                            <div class="overlay">
+                                <p>Image 3 Description</p>
+                                <button class="carousel-button">Learn More</button>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <img src="assets/one.png" class="img-fluid" alt="Image 4">
+                            <div class="overlay">
+                                <p>Image 4 Description</p>
+                                <button class="carousel-button">Learn More</button>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <img src="assets/two.png" class="img-fluid" alt="Image 5">
+                            <div class="overlay">
+                                <p>Image 5 Description</p>
+                                <button class="carousel-button">Learn More</button>
+                            </div>
+                        </div>
+                    </div>
+                    <button class="prev-button">&lt;</button>
+                    <button class="next-button">&gt;</button>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section: Why Choose Us -->
+        <section class="container p-5 my-2 why-choose-us">
+            <div class="text-center mb-5">
+                <h1 class="mb-3 section-heading">Why Choose Us</h1>
+                <h2 class="mb-3 section-subheading">Why We Are Best</h2>
+            </div>
+            <div class="col-lg-11 mx-auto">
+                <div class="row py-2 row">
+                    <div class="feature col-lg-3 col-md-6">
+                        <div class="feature-icon text-start mb-3">
+                            <img style="height: 60px;" src="assets/1.png" alt="">
+                        </div>
+                        <h3 class="fs-5 text-start text-body-emphasis">Clarified Vision & Target</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ipsum iure hic aliquam doloremque
+                            reiciendis assumenda ea magni accusamus eaque eius.</p>
+                    </div>
+                    <div class="feature col-lg-3 col-md-6">
+                        <div class="feature-icon text-start mb-3">
+                            <img style="height: 60px;" src="assets/2.png" alt="">
+                        </div>
+                        <h3 class="fs-5 text-start text-body-emphasis">High Performance</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ipsum iure hic aliquam doloremque
+                            reiciendis assumenda ea magni accusamus eaque eius.</p>
+                    </div>
+                    <div class="feature col-lg-3 col-md-6">
+                        <div class="feature-icon text-start mb-3">
+                            <img style="height: 60px;" src="assets/3.png" alt="">
+                        </div>
+                        <h3 class="fs-5 text-start text-body-emphasis">Maintain Security</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ipsum iure hic aliquam doloremque
+                            reiciendis assumenda ea magni accusamus eaque eius.</p>
+                    </div>
+                    <div class="feature col-lg-3 col-md-6">
+                        <div class="feature-icon text-start mb-3">
+                            <img style="height: 60px;" src="assets/4.png" alt="">
+                        </div>
+                        <h3 class="fs-5 text-start text-body-emphasis">Better Strategy & Quality</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ipsum iure hic aliquam doloremque
+                            reiciendis assumenda ea magni accusamus eaque eius.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section: Our Project -->
+        <section class="container p-5 my-2 our-project">
+            <div class="px-4 py-2 my-5 text-center">
+                <div class="text-center mb-5">
+                    <h1 class="mb-3 section-heading">Our Project</h1>
+                    <h2 class="mb-3 section-subheading">Why We Are Best</h2>
+                </div>
+                <div class="container text-center">
+                    <div class="row">
+                        <div class="col-lg-8 col-sm-12 text-end">
+                            <img id="best-feature-image" class="img-fluid" src="assets/best1.png" alt="Best Feature Image">
+                        </div>
+                        <div class="col-lg-4 col-sm-12 d-flex flex-column best-features">
+                            <div class="best-features-div active" data-image="assets/best1.png">
+                                <h3>Genderless Kei – Japan’s Hot</h3>
+                                <p>Set to launch on the manufacturer’s new A330neo aircraft in 2017, it’s offering lots of
+                                </p>
+                            </div>
+                            <div class="best-features-div" data-image="assets/best2.jpg">
+                                <h3>Better Strategy & Quality</h3>
+                                <p>Set to launch on the manufacturer’s new A330neo aircraft in 2017, it’s offering lots of
+                                </p>
+                            </div>
+                            <div class="best-features-div" data-image="assets/best3.jpg">
+                                <h3>Genderless Kei – Japan’s Hot</h3>
+                                <p>Set to launch on the manufacturer’s new A330neo aircraft in 2017, it’s offering lots of
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section: Experts Growth -->
+        <section class="container p-5 my-2 expert-growth">
+            <div class="text-center mb-5">
+                <h1 class="mb-3 section-heading">Experts Growth</h1>
+                <h2 class="mb-3 section-subheading">Our Company Growth</h2>
+            </div>
+            <div class="mx-auto">
+                <div class="row g-4 py-2">
+                    <div class="feature col">
+                        <div class="feature-icon text-center mb-3">
+                            <img style="height: 25px; margin-top: 10px;" src="assets/heart.png" alt="">
+                        </div>
+                        <h3 class="text-body-emphasis">199+</h3>
+                        <p class="text-center">Satisfied Customers</p>
+                    </div>
+                    <div class="feature col">
+                        <div class="feature-icon text-center mb-3">
+                            <img style="height: 25px; margin-top: 10px;" src="assets/clock.png" alt="">
+                        </div>
+                        <h3 class="text-body-emphasis">1591+</h3>
+                        <p class="text-center">Days Of Operation</p>
+                    </div>
+                    <div class="feature col">
+                        <div class="feature-icon text-center mb-3">
+                            <img style="height: 25px; margin-top: 10px;" src="assets/tick.png" alt="">
+                        </div>
+                        <h3 class="text-body-emphasis">283+</h3>
+                        <p class="text-center">Complete Projects</p>
+                    </div>
+                    <div class="feature col">
+                        <div class="feature-icon text-center mb-3">
+                            <img style="height: 25px; margin-top: 10px;" src="assets/trophy.png" alt="">
+                        </div>
+                        <h3 class="text-body-emphasis">75+</h3>
+                        <p class="text-center">Win Awards.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section: Client Feedback -->
+        <section class="container p-5 my-2 client-feedback">
+            <div class="text-center mb-5">
+                <h1 class="mb-3 section-heading">Client's Feedback</h1>
+                <h2 class="mb-3 section-subheading">People Say's About Us!</h2>
+            </div>
+            <div class="col-lg-5 mx-auto">
+                <p class="feedback">
+                    <img class="feedback-image" src="assets/Quotemarks-left.png" alt="Quote Marks">
+                    Jannat Tumpa The standard chunk of Lorem Ipsum used since the 1500s is reproduced below for those
+                    interested. Sections Bonorum et Malorum original.
+                </p>
+                <p class="feedback-name">
+                    <span style="color:#FF3147; font-weight: 700;">JANNAT TUMPA</span> - COO, AMERIMAR ENTERPRISES, INC.
+                </p>
+            </div>
+        </section>
+
+        <!-- Footer -->
+        <footer class="text-center">
+            <img class="mx-auto img-fluid" src="assets/group.png" alt="Footer Image">
+        </footer>
+    </div>
+</body>
+
+</html>
