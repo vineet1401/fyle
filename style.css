@@ -1,3 +1,50 @@
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400..900&display=swap');
+
+.navbar-brand{
+  font-family: "Orbitron", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 900;
+  font-style: normal;
+  font-size: 2em;
+  color: #ff3147;
+  letter-spacing: 5px;
+}
+.navbar-nav {
+  display: flex;
+  /* flex-direction: row; */
+  justify-content: end !important;
+  align-items: flex-end;
+}
+
+.navbar {
+  background: white;
+  z-index: 10;
+  position: fixed;
+  top: 0px;
+  width: 100%;
+}
+
+.nav-item {
+  padding-inline: 10px;
+  font-weight: 600;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+.nav-item a{
+  color: black;
+  text-decoration: none;
+}
+
+.nav-item a:hover {
+  color: #ff3147;
+}
+a.active {
+  color: #ff3147;
+  border-bottom: 2px solid #ff3147;
+}
+.nav-item :hover {
+  border-bottom: 2px solid #ff3147;
+}
 
 /* main hero */
 .section-heading {
@@ -12,15 +59,19 @@
 
 .section-subheading {
   /* text-align: left; */
-  font:  normal bold 45px sans-serif;
+  font: normal bold 45px sans-serif;
   letter-spacing: 0px;
   color: #000000;
   text-transform: uppercase;
   opacity: 1;
 }
 
+.award-winning{
+ margin-top: 100px;
+}
+
 .contact-us {
-  background: #ff3147 ;
+  background: #ff3147;
   border-radius: 5px;
   opacity: 1;
   color: white;
@@ -31,12 +82,9 @@
 }
 
 .what-we-do {
-  background: #fafafa ;
+  background: #fafafa;
   opacity: 1;
 }
-
-
-
 
 /* features */
 .feature p {
@@ -70,13 +118,12 @@
 .best-features-div:hover,
 .best-features-div.active {
   color: white;
-  background: #ff3147 ;
+  background: #ff3147;
 }
-
 
 /* expert growth */
 .expert-growth {
-  background: #fafafa ;
+  background: #fafafa;
 }
 
 .expert-growth .feature {
@@ -100,7 +147,6 @@
   text-align: center;
 }
 
-
 /* feedback */
 .feedback {
   text-align: justify;
@@ -115,24 +161,18 @@
   position: absolute;
   /* top: 1000; */
   height: 20px;
- z-index: -1;
+  z-index: -1;
 }
 
-
-
-footer{
+footer {
   /* background: url(assets/nocopu.png) ; */
-  background: #ff3147 ;
+  background: #ff3147;
   height: 150px;
 
   display: flex;
   justify-content: center;
   align-items: center;
 }
-
-
-
-
 
 .carousel-container {
   position: relative;
@@ -144,7 +184,7 @@ footer{
 
 .carousel {
   display: flex;
-  /* overflow-x: scroll; */
+  overflow-x: scroll;
   transition: transform 0.5s ease-in-out;
   padding: 10px;
 }
@@ -152,23 +192,21 @@ footer{
   display: none;
 }
 
-
-
 .carousel-slide {
   height: max-content;
   display: flex;
   justify-content: center;
   align-items: center;
   font-size: 2em;
-  opacity: 0.8;
+  margin: 0px 16px;
 }
-.carousel-slide img{
+.carousel-slide img {
   height: 400px;
   width: 300px;
 }
 .carousel-slide.active {
   font-size: 2em;
-  opacity: 1;
+  
 }
 
 .carousel-dots {
@@ -182,7 +220,7 @@ footer{
   margin: 0 5px;
   /* background-color: #bbb; */
   border-radius: 50%;
-  display: inline-block;  
+  display: inline-block;
   cursor: pointer;
   /* transition: background-color 0.3s; */
   background: url(assets/dot.png);
@@ -195,4 +233,71 @@ footer{
   background: url(assets/acrcedot.png);
   background-size: 25px;
   /* background-color: #717171; */
+}
+
+
+
+.carousel-slide {
+  position: relative;
+  display: inline-block;
+}
+
+.carousel-slide:hover .overlay {
+  display: block;
+  height: 400px;
+  width: 100%;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color:  #ff3147; /* Semi-transparent black */
+  display: none;
+  justify-content: center;
+  align-items: center;
+}
+
+.overlay-content {
+  text-align: center;
+  height: inherit;
+  color: white;
+  font-family: sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  padding: 10px;
+}
+
+.overlay-content > img{
+  height: 50px;
+  width: 45px;
+}
+
+.overlay-content p {
+  margin-bottom: 10px;
+  font-size: 16px;
+}
+
+.overlay-content a {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  width: fit-content;
+  background-color: white; /* Blue color */
+  color:  #ff3147;
+  border-radius: 5px;
+  font-size: 20px;
+  padding: 10px;
+  cursor: pointer;
+}
+
+.overlay-content a img{
+  height: 20px;
+  width: 30px;
+  margin: 0px 10px;
 }
